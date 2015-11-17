@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="copyright" content="Copyright(c) Simplex Internet Inc.All Rights Reserved." />
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/module.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/contReset.css" media="screen" /><!-- 가이드용 CSS -->
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/ui.js"></script>
+</head>
+<body>
+<div id="skipNavigation">
+    <p><a href="#gnb">대메뉴 바로가기</a><a href="#content">컨텐츠 바로가기</a></p>
+</div>
+<hr class="layout" />
+
+<div id="wrap">
+    <div id="header"></div>
+    <hr class="layout" />
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <hr class="layout" />
+
+        <div id="content" style="width:985px;">
+
+            <div class="gHeading">
+                <div class="mTitle">
+                    <h1>버튼</h1>
+                </div>
+                <div class="mPath">
+                    <h2>현재 위치</h2>
+                    <ol>
+                        <li class="home"><a href="/">홈</a></li>
+                        <li>1depth</li>
+                        <li title="현재 위치"><strong>2depth</strong></li>
+                    </ol>
+                    <p><a href="#none" class="btnManual"><span>매뉴얼</span></a></p>
+                </div>
+            </div>
+
+            <div class="mGuideBox">
+                <h2>주의사항</h2>
+                <ul>
+                    <li>페이지 타입에 따라 버튼 정렬방식이 다릅니다. </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mButton] 버튼 정렬</h2>
+                </div>
+
+                <div class="mTitle gSub">
+                    <h3>페이지 하단</h3>
+                    <p>가운데 정렬을 기본으로 한다.</p>
+                </div>
+                <h4>가운데 정렬</h4>
+                <div class="mButton">
+                    <p>
+                        <a href="#none" class="btnSubmit"><span>등록</span></a>
+                        <a href="#none" class="btnCancel"><span>취소</span></a>
+                    </p>
+                </div>
+
+                <h4>가운데 정렬 + 특정버튼만 간격 띄움</h4>
+                <div class="mButton">
+                    <p>
+                        <a href="#none" class="btnSubmit"><span>등록</span></a>
+                        <a href="#none" class="btnCancel"><span>취소</span></a>
+                        <a href="#none" class="btnCancel gIndent"><span>미리보기</span></a>
+                    </p>
+                </div>
+
+                <h4>가운데 정렬 + 양쪽 정렬</h4>
+                <div class="mButton gAdjust">
+                    <p class="gLeft"><a href="#none" class="btnCancel"><span>미리보기</span></a></p>
+                    <p>
+                        <a href="#none" class="btnSubmit"><span>등록</span></a>
+                        <a href="#none" class="btnCancel"><span>취소</span></a>
+                    </p>
+                    <p class="gRight"><a href="#none" class="btnCancel"><span>미리보기</span></a></p>
+                </div>
+
+                <!--
+                <h4>왼쪽, 양쪽 정렬 : 적용된 컨텐츠는 아직 없으나 가이드는 있음.(2012.05.18)</h4>
+                <div class="mButton">
+                    <p class="gLeft">
+                        <a href="#none" class="btnSubmit"><span>등록</span></a>
+                    </p>
+                    <p class="gRight">
+                        <a href="#none" class="btnCancel"><span>취소</span></a>
+                    </p>
+                </div>
+
+                <br /><br /> -->
+
+                <h3>페이지 중간</h3>
+                <h4>오른쪽 정렬 : 링크 기능,팝업 호출시 사용</h4>
+                <div class="mButton">
+                    <p class="gRight">
+                        <a href="#none" class="btnGeneral"><span>내 결제수단 보기</span></a>
+                    </p>
+                </div>
+
+                <h4>가운데 정렬 : 검색 등 추가컨텐츠가 동일 페이지에 노출 될때</h4>
+                <div class="mButton">
+                    <p>
+                        <a href="#none" class="btnGeneral"><span>검색</span></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mButton + typeDesc] 텍스트 + 버튼</h2>
+                </div>
+
+                <h3>페이지에서 사용 될 경우</h3>
+                <div class="mButton typeDesc">
+                    <p class="gLeft">플래시 파일 경로가 복사됩니다. 원하는 위치에 '붙여넣기'하여 사용하세요.</p>
+                    <p class="gRight"><a href="#none" class="btnGeneral"><span>복사하기</span></a></p>
+                </div>
+
+                <div class="mLayer gMedium" style="display:block; margin:20px 0 0;">
+                    <div class="gTop">
+                        <h6>레이어에서 사용 될 경우</h6>
+                    </div>
+                    <div class="gMiddle">
+                        <div class="mButton typeDesc gLayer">
+                            <p class="gLeft">플래시 파일 경로가 복사됩니다. 원하는 위치에 '붙여넣기'하여 사용하세요.</p>
+                            <p class="gRight"><a href="#none" class="btnEm"><span>복사하기</span></a></p>
+                        </div>
+                        <div class="mButton">
+                            <a href="#none" class="btnEm eLyrClose"><span>닫기</span></a>
+                        </div>
+                    </div>
+                    <a href="#none" class="btnClose eClose"><span>레이어 닫기</span></a>
+                </div>
+            </div>
+
+            <br /><br /><br /><br /><br /><br /><br />
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[gBtn] 테이블에 사용되는 버튼 정렬</h2>
+                </div>
+
+                <h3>mBoard type1</h3>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col class="subject" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chkTxt">선택</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="subject gBtn">테이블내에 텍스트 + 버튼 / 버튼 단독 / input checkbox, radio + 버튼 일 경우 td에 class="gBtn"을 삽입한다. <a class="btnEm" href="#none"><span>일반형 <em class="icoBul"></em></span></a></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>mBoard type2</h3>
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td class="gBtn">테이블내에 텍스트 + 버튼 / 버튼 단독 / input checkbox, radio + 버튼 일 경우 td에 class="gBtn"을 삽입한다. <a class="btnEm" href="#none"><span>일반형 <em class="icoBul"></em></span></a></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[gBtnAdjust] 테이블에 사용되는 아이콘 정렬</h2>
+                </div>
+
+                <h3>미리보기</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col class="subject" />
+                        <col style="width:10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chkTxt">선택</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="subject">
+                            <div class="gBtnAdjust">
+                                <p class="txt"><a href="#none">내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용</a></p>
+                                <p class="btn">
+                                    <a href="#none" class="btnIcon icoPreview" title="미리보기">미리보기</a>
+                                    <a href="#none" class="btnIcon icoPreview" title="미리보기">미리보기</a>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="center">내용</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>수정</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col class="subject" />
+                        <col style="width:10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chkTxt">선택</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="subject">
+                            <div class="gBtnAdjust">
+                                <p class="txt"><a href="#none">내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용 내용내용내용</a></p>
+                                <p class="btn">
+                                    <button class="btnIcon icoModify" title="그룹명 수정">그룹명 수정</button>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="center">내용</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>버튼 디자인 : 7종 + 확장</h2>
+                    <ul>
+                        <li>버튼은 일반이미지 버튼으로 사용하지 않고, 스타일을 입힌 시스템 버튼으로 사용합니다.</li>
+                        <li>사이즈는 디자인에 맞게 적절히 표현이 가능하나, 권장하지 않습니다.</li>
+                    </ul>
+                </div>
+
+                <h3>[btnIcon] 아이콘형 버튼</h3>
+                <ul class="mList">
+                    <li>btnIcon + ico[명칭] : 다중클래스 형태로 사용</li>
+                    <li>2012-11월 이후 프로젝트부터 캘린더 아이콘은 이미지로 삽입</li>
+                </ul>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col width="15%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">아이콘</th>
+                        <td class="gBtn">
+                            <a href="#none" class="btnIcon icoDel"><span>삭제</span></a>
+                            <a href="#none" class="btnIcon icoPlus"><span>추가</span></a>
+                            <a href="#none" class="btnIcon icoMinus"><span>제거</span></a>
+                            <a href="#none" class="btnIcon icoPreview"><span>미리보기</span></a>
+                            <a href="#none" class="btnIcon icoModify"><span>수정</span></a>
+
+                            <a href="#none" class="btnIcon icoDel disabled"><span>삭제</span></a>
+                            <a href="#none" class="btnIcon icoPlus disabled"><span>추가</span></a>
+                            <a href="#none" class="btnIcon icoMinus disabled"><span>제거</span></a>
+                            <a href="#none" class="btnIcon icoPreview disabled"><span>미리보기</span></a>
+                            <a href="#none" class="btnIcon icoModify disabled"><span>수정</span></a>
+
+                            <a href="#none" class="btnIcon icoXls"><span>엑셀</span></a>
+                            <a href="#none" class="btnIcon icoDefault"><span>기본</span></a>
+                            <a href="#none" class="btnIcon icoDefault selected"><span>기본</span></a>
+                            <a href="#none" class="btnIcon icoMemo selected"><span>메모</span></a>
+                            <a href="#none" class="btnIcon icoMemo"><span>메모</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">캘린더</th>
+                        <td>
+                            <input type="text" value="2011-12-25" class="fText" style="width:73px;" />
+                            <a href="#none" class="btnIcon icoCal"><span>달력보기</span></a>
+                            ~
+                            <input type="text" value="2011-12-25" class="fText" style="width:73px;" />
+                            <a href="#none" class="btnIcon icoCal"><span>달력보기</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2012-11월 이후</th>
+                        <td>
+                            <input type="text" value="2011-12-25" class="fText" style="width:73px;" />
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/ico_calendar.gif" alt="달력보기" class="img_calendar icoCal" /></a>
+                            ~
+                            <input type="text" value="2011-12-25" class="fText" style="width:73px;" />
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/ico_calendar.gif" alt="달력보기" class="img_calendar icoCal" /></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[btnMove] 항목 이동 등에 사용 될 수 있는 버튼</h3>
+                <ul class="mList">
+                    <li>btnMove + ico[명칭] : 다중클래스 형태로 사용</li>
+                </ul>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col width="15%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">이동버튼</th>
+                        <td>
+                            <a href="#none" class="btnMove icoFirst"><span>처음</span></a>
+                            <a href="#none" class="btnMove icoPrev" ><span>이전</span></a>
+                            <a href="#none" class="btnMove icoNext"><span>다음</span></a>
+                            <a href="#none" class="btnMove icoLast"><span>마지막</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#none" class="btnMove icoRight"><span>선택한 항목 오른쪽으로 이동</span></a>
+                            <a href="#none" class="btnMove icoLeft" ><span>선택한 항목 왼쪽으로 이동</span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[btnNormal] 테이블 내부에 있는 버튼</h3>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col width="15%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">캘린더</th>
+                        <td>
+                            <input type="text" value="2011-12-25" class="fText" style="width:73px;" />
+                            <a href="#none" class="btnIcon icoCal"><span>달력보기</span></a>
+                            ~
+                            <input type="text" value="2011-12-25" class="fText" style="width:73px;" />
+                            <a href="#none" class="btnIcon icoCal"><span>달력보기</span></a>
+                            &nbsp;&nbsp;
+                            <a href="#none" class="btnNormal"><span>오늘</span></a>
+                            <a href="#none" class="btnNormal"><span>3일</span></a>
+                            <a href="#none" class="btnNormal"><span>7일</span></a>
+                            <a href="#none" class="btnNormal"><span>1달</span></a>
+                            <a href="#none" class="btnNormal"><span>3달</span></a>
+                            <a href="#none" class="btnNormal"><span>1년</span></a>
+                            <a href="#none" class="btnNormal"><span>기본 검색기간 설정</span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <h3>[btnEm] 테이블 내부에 있는 강조 버튼 (form전송, 링크)</h3>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col width="15%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">form + button</th>
+                        <td>
+                            <input type="text" class="fText" /> <a href="#none" class="btnEm"><span>일반형 <em class="icoBul"></em></span></a>
+                            <input type="text" class="fText" /> <a href="#none" class="btnEm selected"><span>일반형이 선택된 경우 <em class="icoBul"></em></span></a> <a href="#none" class="btnEm disabled"><span>일반형이 선택 안될 경우 <em class="icoBul"></em></span></a>
+                            <p class="gSingleTop">
+                                <input type="text" class="fText" />
+                                <a href="#none" class="btnEm"><span><em class="icoDel"></em> 삭제형</span></a>
+                                <a href="#none" class="btnEm"><span><em class="icoPlus"></em> 추가형</span></a>
+                                <a href="#none" class="btnEm"><span><em class="icoMinus"></em> 감소형</span></a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">페이지 이동</th>
+                        <td>
+                            <a href="#none" class="btnEm"><span>새창으로 이동할때<em class="icoBul"></em></span></a>
+                            <a href="#none" class="btnEm"><span>다른페이지로 바로가기<em class="icoBul"></em></span></a>
+                            <a href="#none" class="btnEm"><span>팝업을 호출할때</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">파일 업로드</th>
+                        <td>
+                            <input type="file" value="" class="fFile" />
+                            <a href="#none" class="btnEm"><span><em class="icoDel"></em> 삭제</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">다운 로드</th>
+                        <td>
+                            <a href="#none" class="btnEm"><span><em class="icoXls"></em> 엑셀다운로드</span></a>
+                            <a href="#none" class="btnEm"><span><em class="icoDoc"></em> 워드다운로드</span></a>
+                            <a href="#none" class="btnEm"><span><em class="icoPpt"></em> PPT다운로드</span></a>
+                            <a href="#none" class="btnEm"><span><em class="icoPdf"></em> PDF다운로드</span></a>
+                            <a href="#none" class="btnEm"><span><em class="icoHwp"></em> 한글다운로드</span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <h3>[btnCtrl] 테이블 상,하단에 붙는 버튼</h3>
+                <div class="mCtrl typeBoard">
+                    <p class="gCtrlLeft">
+                        <a href="#none" class="btnCtrl"><span><em class="icoXls"></em> 엑셀다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoDoc"></em> 워드다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoPpt"></em> PPT다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoPdf"></em> PDF다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoHwp"></em> 한글다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoDel"></em> 삭제</span></a>
+                        <a href="#none" class="btnCtrl"><span>확인</span></a>
+                        <a href="#none" class="btnCtrl"><span>취소</span></a>
+                        <a href="#none" class="btnCtrl"><span>예</span></a>
+                        <a href="#none" class="btnCtrl"><span>아니오</span></a>
+                    </p>
+                    <p class="gCtrlRight">
+                        <a href="#none" class="btnCtrl"><span><em class="icoXls"></em> 엑셀다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoDoc"></em> 워드다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoPpt"></em> PPT다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoPdf"></em> PDF다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoHwp"></em> 한글다운로드</span></a>
+                        <a href="#none" class="btnCtrl"><span><em class="icoDel"></em> 삭제</span></a>
+                        <a href="#none" class="btnCtrl"><span>확인</span></a>
+                        <a href="#none" class="btnCtrl"><span>취소</span></a>
+                        <a href="#none" class="btnCtrl"><span>예</span></a>
+                        <a href="#none" class="btnCtrl"><span>아니오</span></a>
+                    </p>
+                </div>
+
+                <br /><br />
+
+                <h3>[btnCtrlEm] 테이블 상단에 붙는 버튼들 중 강조되는 버튼</h3>
+                <div class="mCtrl typeBoard">
+                    <p class="gCtrlRight">
+                        <a href="#none" class="btnCtrlEm"><span><em class="icoMore"></em> 등록</span></a>
+                        <a href="#none" class="btnCtrlEm"><span><em class="icoMore"></em> 추가</span></a>
+                        <a href="#none" class="btnCtrlEm"><span><em class="icoMore"></em> 복사</span></a>
+                    </p>
+                </div>
+
+                <br /><br />
+
+                <h3>[btnGeneral] 컨텐츠 중간에 사용되는 버튼</h3>
+                <h4>페이지에서 사용 될 경우</h4>
+                <div class="mButton">
+                    <p>
+                        <a href="#none" class="btnGeneral"><span>검색</span></a>
+                        <a href="#none" class="btnGeneral disabled"><span>검색</span></a>
+                    </p>
+                </div>
+
+                <br /><br />
+
+                <h4>팝업에서 사용 될 경우</h4>
+                <div id="popup">
+                <div id="popWrap" style="padding:0;">
+                    <div class="mButton" style="position:static;">
+                        <p>
+                            <a href="#none" class="btnGeneral"><span>검색</span></a>
+                            <a href="#none" class="btnGeneral disabled"><span>검색</span></a>
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+                <br /><br />
+
+                <h3>[btnSubmit] 하단 메인버튼 (전체 페이지를 컨트롤 할때 사용되는 버튼)</h3>
+                <h4>페이지에서 사용 될 경우</h4>
+                <div class="mButton">
+                    <p>
+                        <a href="#none" class="btnSubmit"><span>등록</span></a>
+                        <a href="#none" class="btnSubmit"><span>확인</span></a>
+                        <a href="#none" class="btnSubmit"><span>완료</span></a>
+                        <a href="#none" class="btnSubmit"><span>주문서 출력</span></a>
+                        <a href="#none" class="btnSubmit disabled"><span>등록</span></a>
+                    </p>
+                </div>
+
+                <br /><br />
+
+                <h4>팝업에서 사용 될 경우</h4>
+                <div id="popup">
+                <div class="mButton" style="position:static;">
+                    <p>
+                        <a href="#none" class="btnSubmit"><span>확인</span></a>
+                        <a href="#none" class="btnSubmit disabled"><span>확인</span></a>
+                    </p>
+                </div>
+                </div>
+
+                <h3>[btnCancel] 하단 보조버튼 (취소, 이전 등에 사용)</h3>
+                <h4>페이지에서 사용 될 경우</h4>
+                <div class="mButton">
+                    <p>
+                        <a href="#none" class="btnCancel"><span>취소</span></a>
+                        <a href="#none" class="btnCancel"><span>이전</span></a>
+                        <a href="#none" class="btnCancel disabled"><span>취소</span></a>
+                    </p>
+                </div>
+
+                <h4>팝업에서 사용 될 경우</h4>
+                <div id="popup">
+                <div class="mButton" style="position:static;">
+                    <p>
+                        <a href="#none" class="btnCancel"><span>취소</span></a>
+                        <a href="#none" class="btnCancel disabled"><span>취소</span></a>
+                    </p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="layout" />
+</div>
+
+<div id="footer"><p class="copyright"><img src="http://img.echosting.cafe24.com/layout/txt_copyright.png" alt="Copyright&copy; SimpleX Internet Inc.All Rights Reserved." /></p></div>
+</body>
+</html>

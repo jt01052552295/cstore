@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="copyright" content="Copyright(c) Simplex Internet Inc.All Rights Reserved." />
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/module.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/contReset.css" media="screen" /><!-- 가이드용 CSS -->
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/ui.js"></script>
+</head>
+<body>
+<div id="skipNavigation">
+    <p><a href="#gnb">대메뉴 바로가기</a><a href="#content">컨텐츠 바로가기</a></p>
+</div>
+<hr class="layout" />
+
+<div id="wrap">
+    <div id="header"></div>
+    <hr class="layout" />
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <hr class="layout" />
+
+        <div id="content" style="width:985px;">
+
+            <div class="gHeading">
+                <div class="mTitle">
+                    <h1>도움말</h1>
+                </div>
+                <div class="mPath">
+                    <h2>현재 위치</h2>
+                    <ol>
+                        <li class="home"><a href="/">홈</a></li>
+                        <li>1depth</li>
+                        <li title="현재 위치"><strong>2depth</strong></li>
+                    </ol>
+                    <p><a href="#none" class="btnManual"><span>매뉴얼</span></a></p>
+                </div>
+            </div>
+
+            <div class="mGuideBox">
+                <h2>주의사항</h2>
+                <ul>
+                    <li>컨텐츠 중 추가 설명이 필요한 부분을 안내형과 경고형으로 전달합니다.</li>
+                    <li>mHelp의 경우 항상 페이지 하단에 사용되며, 표내에서 도움말이 필요할 경우 mAdvice를 사용합니다.</li>
+                    <li>mHelp의 경우 section으로 감싸지 않고, 같은 레벨로 사용합니다.</li>
+                    <li>mAdvice의 경우, 표 내부의 타이틀이므로 Heading 처리하지 않습니다.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mHelp] 페이지 하단 도움말</h2>
+                    <p>보다 상세한 도움말이 필요할 경우, 페이지 하단에 도움말을 사용합니다. (선택입력)</p>
+                </div>
+
+                <!-- mHelp 안내 -->
+                <div class="mHelp typeInfo">
+                    <h2>[typeInfo] 안내, 기능설명</h2>
+                    <div class="gInner">
+                        <ul>
+                            <li>배송 : <span title="완료">&#927;</span> 완료 <span title="진행 중">&#916;</span> 배송중 <span title="진행 전">&#935;</span> 배송전</li>
+                            <li>취소 : <span title="완료">&#927;</span> 전체취소 <span title="진행 중">&#916;</span> 부분취소 <span title="진행 전">&#935;</span> 취소안함</li>
+                            <li>현금 주문 프로세스별 처리 예제  <a href="#none" class="link">1:1고객문의하기</a></li>
+                            <li>카드 주문 프로세스별 처리 예제 <a href="#none" class="link">카드매출전표출력</a></li>
+                        </ul>
+                        <h3>부분취소 및 부분반송</h3>
+                        <ul>
+                            <li>회원등급혜택 또는 쿠폰혜택 할인을 받았을 경우에는 상품 반송 시 부분반송이 불가능하니 운영 시 참고하시기 바랍니다.</li>
+                            <li>단 카드취소의 경우에만 부분취소/반송 처리 시 계산된 환불액만큼 카드부분취소가 가능합니다. <br/>(환불액을 계산한 이후 “카드부분취소”버튼을 클릭 시 계산된 환불액만큼 매입 취소 됩니다.)</li>
+                        </ul>
+                        <!--div class="helpBtn">
+                             <a href="http://mymonolog.cafe24.com/admin/php/popup/popup_pg_info.php?pgname=dacom" onclick="window.open(this.href,'_blank','scrollbars=1,width=600,height=520');return false;"><img src="/smartAdmin/img/common/btn_card_re.gif" alt="카드사별 부분취소 서비스 안내" /></a>
+                        </div-->
+                        <div class="mBoard type1">
+                            <table border="1" summary="">
+                            <caption>사입접수 안내</caption>
+                            <colgroup>
+                                <col style="width:95px;" />
+                                <col style="width:110px;" />
+                                <col style="width:120px;" />
+                                <col style="width:auto;" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">영업시간</th>
+                                    <th scope="col">원활한 주문시간</th>
+                                    <th scope="col">상가명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>밤시장</strong></td>
+                                    <td>20시 ~ 06시</td>
+                                    <td>20시 ~ 22시</td>
+                                    <td>apm, apm럭스, 디자이너클럽, 뉴존, 유어스, 광희, <br />제평, 남평화, 신평화, 아트프라자, w몰, 팀204, 혜양, 테크노</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>낮시장</strong></td>
+                                    <td>00시 ~ 12시</td>
+                                    <td>05시 ~ 12시</td>
+                                    <td>디오트, 청평화</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>신발상가</strong></td>
+                                    <td>02시 ~ 14시</td>
+                                    <td>07시 ~ 12시</td>
+                                    <td>신발상가 B동, C동, 동문상가, 슈슈상가</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!-- //mHelp 안내 -->
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mTooltip] Tooltip</h2>
+                </div>
+
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>Tooltip 사용 예</caption>
+                    <colgroup><col width="20%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Tooltip 사용 예
+                            <span class="icoHelp eTip">도움말</span>
+                            <div class="mTooltip gSmall">
+                                <div class="gTop"></div>
+                                <div class="gMiddle">
+                                    <strong class="tipTitle">도움말</strong>
+                                    <p>레이아웃을 포함하고 있어, 툴팁위치가 어긋남</p>
+                                </div>
+                                <div class="gBottom"></div>
+                                <a href="#none" class="btnClose eClose"><span>도움말 닫기</span></a>
+                                <span class="icoArrTL"></span>
+                            </div>
+                        </th>
+                        <td>툴팁은 th영역에만 사용</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tooltip 사용 예
+                            <span class="icoHelp eTip">도움말</span>
+                            <div class="mTooltip gPosition gSmall">
+                                <div class="gTop"></div>
+                                <div class="gMiddle">
+                                    <strong class="tipTitle">도움말</strong>
+                                    <p>gPosition을 추가하면, 레이아웃을 포함하고 있어도 정상적으로 노출</p>
+                                </div>
+                                <div class="gBottom"></div>
+                                <a href="#none" class="btnClose eClose"><span>도움말 닫기</span></a>
+                                <span class="icoArrTL"></span>
+                            </div>
+                        </th>
+                        <td>컨텐츠가 레이아웃요소를 가지고 있을 경우, 툴팁에 gPosition을 추가해서 margin을 재설정합니다.</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[gSmall]</h3>
+                <div class="mTooltip gSmall" style="display:block;left:223px;">
+                    <div class="gTop"></div>
+                    <div class="gMiddle">
+                        <strong class="tipTitle">도움말</strong>
+                        <p>아이디를 입력하는 공간입니다.</p>
+                    </div>
+                    <div class="gBottom"></div>
+                    <a href="#none" class="btnClose eClose"><span>도움말 닫기</span></a>
+                    <span class="icoArrTL"></span>
+                    <!--
+                    <span class="icoArrTL"></span>
+                    <span class="icoArrTR"></span>
+                    <span class="icoArrR"></span>
+                    <span class="icoArrB"></span>
+                    <span class="icoArrL"></span>
+                    -->
+                </div>
+
+                <br /><br /><br /><br /><br /><br />
+
+                <h3>[gMedium]</h3>
+                <div class="mTooltip gMedium" style="display:block;left:223px;">
+                    <div class="gTop"></div>
+                    <div class="gMiddle">
+                        <strong class="tipTitle">도움말</strong>
+                        <p>아이디를 입력하는 공간입니다.</p>
+                    </div>
+                    <div class="gBottom"></div>
+                    <a href="#none" class="btnClose eClose"><span>도움말 닫기</span></a>
+                    <span class="icoArrTL"></span>
+                </div>
+
+                <br /><br /><br /><br /><br /><br />
+
+                <h3>[gLarge]</h3>
+                <div class="mTooltip gLarge" style="display:block;left:223px;">
+                    <div class="gTop"></div>
+                    <div class="gMiddle">
+                        <strong class="tipTitle">14세 미만 회원가입 설정안내</strong>
+                        <strong class="tipTitleSub">[기본 배송설정 사용]</strong>
+                        <p>&quot;상점관리 &gt; 배송 및 반품설정 &gt; 배송 및 반품설정&quot;에서 설정한 기본배송비가 적용됩니다.</p>
+                        <strong class="tipTitleSub">[배송비 무료]</strong>
+                        <ul>
+                            <li>14세미만 고객의 회원가입 시 필요한 조건과 정책을 설정합니다.</li>
+                            <li>14세미만 고객의 회원가입 시 필요한 조건과 정책을 설정합니다.</li>
+                        </ul>
+
+                        <strong class="tipTitle">설정값 안내</strong>
+                        <ul>
+                            <li>14세미만 회원인증.....</li>
+                            <li>14세미만 회원인증.....</li>
+                        </ul>
+                        <ol>
+                            <li>14세미만 회원인증.....</li>
+                            <li>14세미만 회원인증.....</li>
+                        </ol>
+                    </div>
+                    <div class="gBottom"></div>
+                    <a href="#none" class="btnClose eClose"><span>도움말 닫기</span></a>
+                    <span class="icoArrTL"></span>
+                </div>
+
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
+
+        </div>
+    </div>
+    <hr class="layout" />
+</div>
+
+<div id="footer"><p class="copyright"><img src="http://img.echosting.cafe24.com/layout/txt_copyright.png" alt="Copyright&copy; SimpleX Internet Inc.All Rights Reserved." /></p></div>
+</body>
+</html>

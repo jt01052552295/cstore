@@ -1,0 +1,1179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="copyright" content="Copyright(c) Simplex Internet Inc.All Rights Reserved." />
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/module.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/contReset.css" media="screen" /><!-- 가이드용 CSS -->
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/ui.js"></script>
+</head>
+<body>
+<div id="skipNavigation">
+    <p><a href="#gnb">대메뉴 바로가기</a><a href="#content">컨텐츠 바로가기</a></p>
+</div>
+<hr class="layout" />
+
+<div id="wrap">
+    <div id="header"></div>
+    <hr class="layout" />
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <hr class="layout" />
+
+        <div id="content" style="width:985px;">
+
+            <div class="gHeading">
+                <div class="mTitle">
+                    <h1>표, 게시판</h1>
+                </div>
+                <div class="mPath">
+                    <h2>현재 위치</h2>
+                    <ol>
+                        <li class="home"><a href="/">홈</a></li>
+                        <li>1depth</li>
+                        <li title="현재 위치"><strong>2depth</strong></li>
+                    </ol>
+                    <p><a href="#none" class="btnManual"><span>매뉴얼</span></a></p>
+                </div>
+            </div>
+
+            <div class="mGuideBox">
+                <h2>주의사항</h2>
+                <ul>
+                    <li>input요소 등 실제 주요 HTML 사용순서는 <a href="/guide/markup.html" target="_blank">[마크업 가이드]</a> 페이지 참고</li>
+                    <li>col width 대신 col style="width" 권장. HTML5 validation에서 오류로 체크됨</li>
+                    <li>row 타입 : mBoard + type2 일 경우 th width는 고정된 값을 사용.</li>
+                    <li>체크박스만 셀에 삽입될경우 .chk로 width값 제어</li>
+                    <li>셀병합될경우 tr에 .rowMerge 추가하여 보더제어(기본은 tr 첫번째 td에 왼쪽 보더없음)</li>
+                    <li><strong>.eTr : tr 오버시 배경색 변경에 사용 (행을 선택할 경우만)</strong></li>
+                    <li>게시판 리스트일 경우 '테이터 없음'셀 하단에 추가</li>
+                    <li>폼요소의 부가 설명은 .txtInfo 사용</li>
+                    <li>td 폭을 좁게 사용해야 하는 경우 tbody에 .gCellSingle 추가 : 좌우 패딩 5px로 변경</li>
+                    <li>.gDivision : 테이블 구분, tbody 구분 필요시 추가(상단 보더 제어)</li>
+                    <li>셀 내에서 버튼 정렬은 <a href="button.html" target="_blank">[button]</a> 페이지를 참고한다</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mBoard]를 기본으로 tbody th의 배경색상유무에 따라 type1, type2로 나뉜다</h2>
+                </div>
+
+                <h3>[ mBoard + type1 ]</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col style="width:25%;" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tfoot class="center">
+                    <tr>
+                        <th scope="row"><strong>합계</strong></th>
+                        <td>내용</td>
+                        <td>내용</td>
+                        <td>내용</td>
+                    </tr>
+                    </tfoot>
+                    <tbody class="center">
+                    <tr>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                    </tr>
+                    <tr>
+                        <td>내용입력</td>
+                        <td class="left">좌측정렬 : class="left"</td>
+                        <td class="left">기본정렬은 left <br />필요에 따라 클래스를 추가하여 정렬맞춤</td>
+                        <td class="right">우측정렬 : class="right"</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col style="width:20%;" /><col width="auto" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" colspan="2">thead의 th는 vertical-algin:middle이 기본정렬</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">상품옵션 사용여부</th>
+                        <td>
+                            <label class="fChk"><input type="radio" checked="checked"  name="use" /> 사용</label>
+                            <label class="fChk"><input type="radio"  name="use" /> 사용안함</label>
+                            <label class="fChk"><input type="radio"  name="use" /> 사용안함</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">저장옵션 선택</th>
+                        <td>
+                            <select>
+                            <option>저장옵션 선택</option>
+                            <option>저장옵션 선택1</option>
+                            <option>저장옵션 선택2</option>
+                            <option>저장옵션 선택3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col style="width:20%;" /><col width="auto" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">옵션명</th>
+                        <th scope="col">옵션값</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text" class="fText"  style="width:97%;" /></td>
+                        <td><input type="text" class="fText" style="width:99%;" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="fText"  style="width:97%;" /></td>
+                        <td><input type="text" class="fText" style="width:99%;" /></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <h3>[ mBoard + type2 ]</h3>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col style="width:25%;" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tfoot class="center">
+                    <tr>
+                        <th scope="row"><strong>합계</strong></th>
+                        <td>내용</td>
+                        <td>내용</td>
+                        <td>내용</td>
+                    </tr>
+                    </tfoot>
+                    <tbody class="center">
+                    <tr>
+                        <th>내용입력</th>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                    </tr>
+                    <tr>
+                        <th>내용입력</th>
+                        <td class="left">좌측정렬 : class="left"</td>
+                        <td class="left">기본정렬은 left <br />필요에 따라 클래스를 추가하여 정렬맞춤</td>
+                        <td class="right">우측정렬 : class="right"</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>내용입력</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>내용입력</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br />
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>내용입력내용입력내용입력내용입력내용입력</td>
+                        <th scope="row">제목</th>
+                        <td>내용입력내용입력내용입력내용입력내용입력</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>테이블 in 테이블</h2>
+                </div>
+
+                <h3>[mBoard + type1]</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup>
+                        <col style="width:10%;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>내용</td>
+                        <td>
+                            <div class="mBoard type1">
+                                <table border="1" summary="">
+                                <caption>테이블 제목</caption>
+                                <colgroup>
+                                    <col style="width:10%;" />
+                                    <col style="width:auto;" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <td>내용</td>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>내용</td>
+                        <td>
+                            <div class="mBoard type2 gSmall">
+                                <table border="1" summary="">
+                                <caption>테이블 제목</caption>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">제목</th>
+                                    <td>내용</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">제목</th>
+                                    <td>내용</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[mBoard + type2] : gSmall대신 col에 고정 width값 사용</h3>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup>
+                        <col style="width:145px;*width:135px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>
+                            <div class="mBoard type1">
+                                <table border="1" summary="">
+                                <caption>테이블 제목</caption>
+                                <colgroup>
+                                    <col style="width:auto;" />
+                                    <col style="width:10%;" />
+                                    <col class="number" />
+                                    <col class="number" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <td>내용</td>
+                                    <td class="number">내용</td>
+                                    <td class="number">내용</td>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                    <td class="number">13,000</td>
+                                    <td class="number">65,000</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>
+                            <div class="mBoard type2 gSmall">
+                                <table border="1" summary="">
+                                <caption>테이블 제목</caption>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">제목</th>
+                                    <td>내용</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">제목</th>
+                                    <td>내용</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <style type="text/css">
+                .gTableMerge.gHeight1 .mBoard.typeBody { height:185px; }
+            </style>
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[gTableMerge &gt; typeHead, typeBody] tbody height 고정</h2>
+                    <ul>
+                        <li>&lt;div class="gTableMerge"&gt;로 typeHead,typeBody를 묶어준다.</li>
+                        <li>thead영역을 typeHead, tbody영역을 typeBody로 구분 한다.</li>
+                        <li>typeBody의 높이값 조정이 필요할 경우 [gHeight숫자] 클래스를 추가한다.</li>
+                        <li>typeHead의 마지막 셀 너비를 typeBody 보다 17px 늘려준다.</li>
+                        <li>너비조정은 px,%,class로 모두 가능하며 상황에 맞게 선택한다.</li>
+                    </ul>
+                </div>
+
+                <div class="gTableMerge gHeight1">
+                    <div class="mBoard type1 typeHead">
+                        <table border="1" summary="">
+                        <caption>사입매장 선택</caption>
+                        <colgroup>
+                            <col class="chk" />
+                            <col style="width:auto;" />
+                            <col style="width:100px;*width:80px;" />
+                            <col style="width:100px;*width:80px;" />
+                            <col style="width:117px;*width:97px;" />
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                            <th scope="col">위치</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">유선전화</th>
+                            <th scope="col">휴대전화</th>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mBoard type1 typeBody">
+                        <table border="1" summary="" class="eTr">
+                        <caption>사입매장 선택</caption>
+                        <colgroup>
+                            <col class="chk" />
+                            <col style="width:auto;" />
+                            <col style="width:100px;*width:80px;" />
+                            <col style="width:100px;*width:80px;" />
+                            <col style="width:100px;*width:80px;" />
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                            <td>청평화시장 5층 가열 19호</td>
+                            <td>매장명</td>
+                            <td>02-1234-1234</td>
+                            <td>010-1234-1234</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="noData">자주 이용하는 매장내역이 없습니다.</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>가로 스크롤</h2>
+                    <ul>
+                        <li>mBoard에 gScroll클래스 추가</li>
+                        <li>col에 px로 사이즈 조정 되어야 함 (.chk를 제외한 주요 항목 너비 지정한 것도 px로 삽입)</li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type1 gScroll">
+                    <table border="1" summary="" class="eTr">
+                    <caption>제목</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col style="width:95px;" />
+                        <col style="width:130px;" />
+                        <col style="width:100px;" />
+                        <col style="width:50px;" />
+                        <col style="width:50px;" />
+                        <col style="width:120px;" />
+                        <col style="width:120px;" />
+                        <col style="width:120px;" />
+                        <col style="width:120px;" />
+                        <col style="width:80px;" />
+                        <col style="width:120px;" />
+                        <col style="width:100px;" />
+                        <col style="width:100px;" />
+                        <col style="width:100px;" />
+                        <col style="width:70px;" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">날짜</th>
+                        <th scope="col">날짜와 시간</th>
+                        <th scope="col">가격정보</th>
+                        <th scope="col">조회수</th>
+                        <th scope="col">No</th>
+                        <th scope="col">전화번호</th>
+                        <th scope="col">휴대폰번호</th>
+                        <th scope="col">주문번호</th>
+                        <th scope="col">카테고리</th>
+                        <th scope="col">지급은행</th>
+                        <th scope="col">계좌번호</th>
+                        <th scope="col">예금주</th>
+                        <th scope="col">정산주기</th>
+                        <th scope="col">정산일</th>
+                        <th scope="col">메모</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>2012-11-05</td>
+                        <td>2012-12-12 12:12:12</td>
+                        <td>123,123</td>
+                        <td>132</td>
+                        <td>100</td>
+                        <td>02-2250-2222</td>
+                        <td>010-1234-5678</td>
+                        <td>20120524-0000016</td>
+                        <td>구분1</td>
+                        <td>우리은행</td>
+                        <td>1005-180-090314</td>
+                        <td>김봉춘</td>
+                        <td>주간정산</td>
+                        <td>금요일</td>
+                        <td class="gBtn"><a href="#none" class="btnEm"><span>메모</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>2012-11-05</td>
+                        <td>2012-12-12 12:12:12</td>
+                        <td>123,123</td>
+                        <td>132</td>
+                        <td>100</td>
+                        <td>02-2250-2222</td>
+                        <td>010-1234-5678</td>
+                        <td>20120524-0000016</td>
+                        <td>구분1</td>
+                        <td>우리은행</td>
+                        <td>1005-180-090314</td>
+                        <td>김봉춘</td>
+                        <td>주간정산</td>
+                        <td>금요일</td>
+                        <td class="gBtn"><a href="#none" class="btnEm"><span>메모</span></a></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>주요 항목 셀 너비 지정</h2>
+                </div>
+
+                <div class="mTitle gSub">
+                    <h3>col 타입 : mBoard + type1</h3>
+                    <ul>
+                        <li>셀의 너비가 고정이며, 자주사용 되는 특정값을 공통으로 정의하여 사용함.</li>
+                        <li>col, td에만 클래스 추가 (.chk만 예외)</li>
+                        <li>테스트 페이지 <a href="/guide/module/table_coltest.html" target="_blank">[ table_coltest ]</a></li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col class="date" />
+                        <col class="time" />
+                        <col class="subject" />
+                        <col class="number" />
+                        <col class="hit" />
+                        <col class="no" />
+                        <col class="orderNum" />
+                        <col class="tel" />
+                        <col class="category" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" rowspan="2" class="chk"><input type="checkbox" class="allCk" /><span class="className">(.chk)</span></th>
+                        <th scope="col" rowspan="2">날짜<span class="className">(.date)</span></th>
+                        <th scope="col" rowspan="2">날짜와 시간<span class="className">(.time)</span></th>
+                        <th scope="col" rowspan="2">제목<span class="className">(.subject)</span></th>
+                        <th scope="col" colspan="3">숫자</th>
+                        <th scope="col" rowspan="2">주문번호<span class="className">(.orderNum)</span></th>
+                        <th scope="col" rowspan="2">전화, 핸드폰<span class="className">(.tel)</span></th>
+                        <th scope="col" rowspan="2">카테고리<span class="className">(.category)</span></th>
+                    </tr>
+                    <tr>
+                        <th scope="col">가격정보<span class="className">(.number)</span></th>
+                        <th scope="col">조회수<span class="className">(.hit)</span></th>
+                        <th scope="col">No<span class="className">(.no)</span></th>
+                    </tr>
+                    </thead>
+                    <tbody class="center">
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="date">2012-12-12</td>
+                        <td class="time">2012-12-12 12:12:12</td>
+                        <td class="subject">제목셀 입니다.</td>
+                        <td class="number">123,123</td>
+                        <td class="hit">132</td>
+                        <td class="no">100</td>
+                        <td class="orderNum">20120524-0000016</td>
+                        <td class="tel">000-000-0000</td>
+                        <td class="category">구분1</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>row 타입의 th 사이즈 고정</h2>
+                    <ul>
+                        <li>row타입 th width 고정시 colgroup은 사용하지 않습니다.</li>
+                        <li>폭길이에 따라 gSmall, gMedium, gLarge 으로 나뉩니다. </li>
+                        <li>테스트 페이지 <a href="http://fetest.cafe24test.com/guide/module/table_rowtest.html" target="_blank">http://fetest.cafe24test.com/guide/module/table_rowtest.html</a></li>
+                    </ul>
+                </div>
+
+                <h3>페이지형</h3>
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">gSmall : 135px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br />
+
+                <div class="mBoard type2 gMedium">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">gMedium : 153px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br />
+
+                <div class="mBoard type2 gLarge">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">gLarge : 170px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br />
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">gSmall : 135px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                        <th scope="row">gSmall : 135px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br />
+
+                <div class="mBoard type2 gMedium">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">gMedium : 153px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                        <th scope="row">gMedium : 153px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br />
+
+                <div class="mBoard type2 gLarge">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">gLarge : 170px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                        <th scope="row">gLarge : 170px</th>
+                        <td>페이지에서 사용 될 경우</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>팝업형</h3>
+
+                <div id="popup" style="width:600px;">
+                    <div id="popWrap" style="padding:0;">
+                        <div class="mBoard type2 gSmall">
+                            <table border="1" summary="">
+                            <caption>테이블 제목</caption>
+                            <tbody>
+                            <tr>
+                                <th scope="row">gSmall : 115px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <br />
+
+                        <div class="mBoard type2 gMedium">
+                            <table border="1" summary="">
+                            <caption>테이블 제목</caption>
+                            <tbody>
+                            <tr>
+                                <th scope="row">gMedium : 135px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <br />
+
+                        <div class="mBoard type2 gLarge">
+                            <table border="1" summary="">
+                            <caption>테이블 제목</caption>
+                            <tbody>
+                            <tr>
+                                <th scope="row">gLarge : 153px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <br />
+
+                        <div class="mBoard type2 gSmall">
+                            <table border="1" summary="">
+                            <caption>테이블 제목</caption>
+                            <tbody>
+                            <tr>
+                                <th scope="row">gSmall : 115px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                                <th scope="row">gSmall : 115px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <br />
+
+                        <div class="mBoard type2 gMedium">
+                            <table border="1" summary="">
+                            <caption>테이블 제목</caption>
+                            <tbody>
+                            <tr>
+                                <th scope="row">gMedium : 135px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                                <th scope="row">gMedium : 135px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <br />
+
+                        <div class="mBoard type2 gLarge">
+                            <table border="1" summary="">
+                            <caption>테이블 제목</caption>
+                            <tbody>
+                            <tr>
+                                <th scope="row">gLarge : 153px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                                <th scope="row">gLarge : 153px</th>
+                                <td>팝업에서 사용 될 경우</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mTitle gSub">
+                    <h3>colspan 사용 할 경우</h3>
+                    <ul>
+                        <li>gFixed 클래스를 추가한다.</li>
+                        <li>gSmall대신 col에 고정 width값 사용</li>
+                    </ul>
+                </div>
+                <div class="mBoard type2 gFixed">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <col style="width:145px;*width:135px;" /><col style="width:35%;" /><col style="width:145px;*width:135px;" /><col style="width:auto;" />
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td colspan="3">IE7에서 table colspan을 했을 때 td안에 내용이 길어지면 테이블 형태가 틀어지는 버그</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>내용입력</td>
+                        <th scope="row">제목</th>
+                        <td>내용입력</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <style type="text/css">
+                /* 이벤트 팩토리 > 이벤트 리스트 */
+                .mBoard.gEventList { color:#898989; }
+                .mBoard.gEventList .subject,
+                .mBoard.gEventList strong { color:#1c1c1c; font-weight:normal; }
+                .mBoard.gEventList strong.txtEm { color:#1b87d4; font-weight:bold; }
+            </style>
+            <div class="section">
+                <div class="mTitle">
+                    <h2>테이블 디자인 확장</h2>
+                    <p>type 뒤에 클래스를 추가하여 디자인 변경</p>
+                </div>
+
+                <h3>[ mBoard + type1 + gEventList ]</h3>
+                <div class="mBoard type1 gEventList">
+                    <table border="1" summary="" class="eTr">
+                    <caption>이벤트 리스트</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col class="no" />
+                        <col class="date" />
+                        <col style="width:7%" />
+                        <col style="width:9%" />
+                        <col class="subject" />
+                        <col style="width:10%" />
+                        <col style="width:10%" />
+                        <col style="width:8%" />
+                        <col style="width:17%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chkTxt">선택</th>
+                        <th scope="col">NO</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">등록자</th>
+                        <th scope="col">이벤트 유형</th>
+                        <th scope="col">이벤트명</th>
+                        <th scope="col">이벤트 시작일</th>
+                        <th scope="col">이벤트 종료일</th>
+                        <th scope="col">진행상태</th>
+                        <th scope="col">이벤트 정보</th>
+                    </tr>
+                    </thead>
+                    <tbody class="gCellSingle center">
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="no">10</td>
+                        <td class="date">2012-06-01 00:00 PM</td>
+                        <td>홍길동</td>
+                        <td>설문형</td>
+                        <td class="subject">
+                            <div class="gBtnAdjust">
+                                <p class="txt">다 가지고도 초 슬림한 LG일체형 PC 를 만나보라!</p>
+                                <p class="btn"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></p>
+                            </div>
+                        </td>
+                        <td>2012-06-01 00:00 PM</td>
+                        <td>2012-06-01 00:00 PM</td>
+                        <td><strong>종료</strong></td>
+                        <td class="gBtn">
+                            <a href="#none" class="btnEm"><span>URL 복사</span></a>
+                            <a href="#none" class="btnEm"><span>소스 복사</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="no">9</td>
+                        <td class="date">2012-06-01 00:00 PM</td>
+                        <td>홍길동</td>
+                        <td>설문형</td>
+                        <td class="subject">
+                            <div class="gBtnAdjust">
+                                <p class="txt">다 가지고도 초 슬림한 LG일체형 PC 를 만나보라!</p>
+                                <p class="btn"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></p>
+                            </div>
+                        </td>
+                        <td>2012-06-01 <br />00:00 PM</td>
+                        <td>2012-06-01 <br />00:00 PM</td>
+                        <td><strong class="txtEm">진행 중</strong></td>
+                        <td class="gBtn">
+                            <a href="#none" class="btnEm"><span>URL 복사</span></a>
+                            <a href="#none" class="btnEm"><span>소스 복사</span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>셀병합 될 경우 tr에 .rowMerge 추가하여 보더제어 (기본은 tr 첫번째 td에 왼쪽 보더없음)</h2>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col width="25%" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody class="center">
+                    <tr>
+                        <td rowspan="3">내용입력</td>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                    </tr>
+                    <tr class="rowMerge">
+                        <td rowspan="2">내용입력</td>
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                    </tr>
+                    <tr class="rowMerge">
+                        <td>내용입력</td>
+                        <td>내용입력</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[array] 테이블 정렬</h2>
+                    <p>제목과 버튼 사이에 띄어쓰기 하지 말것 (띄어쓰기 할 경우 마우스 오버시 그 공간에도 언더라인 생김)</p>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup>
+                        <col style="width:25%;" span="4" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col"><strong class="array">정렬기능<button type="button">정렬선택</button></strong></th>
+                        <th scope="col"><strong class="array descend">내림차순 정렬 선택<button type="button">내림차순 정렬</button></strong></th>
+                        <th scope="col"><strong class="array ascend">오름차순 정렬 선택<button type="button">오름차순 정렬</button></strong></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>내용</td>
+                        <td>내용</td>
+                        <td>내용</td>
+                        <td>내용</td>
+                    </tr>
+                    <tr>
+                        <td>내용</td>
+                        <td>내용</td>
+                        <td>내용</td>
+                        <td>내용</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>테이블 셀 색상</h2>
+                    <ul>
+                        <li>긍정의 강조일 경우는 컬러값 확정 아님. 추후 컨텐츠 나올 경우 재확인 필요.</li>
+                        <li>hover,selected는 js에서 클래스 추가,삭제 됨</li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col class="chk" /><col width="auto;" span="3" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">상태</th>
+                        <th scope="col">class</th>
+                        <th scope="col">컬러값</th>
+                    </tr>
+                    </thead>
+                    <tbody class="center">
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>마우스 오버</td>
+                        <td>hover</td>
+                        <td>#f5f3f4</td>
+                    </tr>
+                    <tr class="selected">
+                        <td class="chk"><input type="checkbox" class="rowCk" checked="checked" /></td>
+                        <td>셀 선택</td>
+                        <td>selected</td>
+                        <td>#eef3f7</td>
+                    </tr>
+                    <tr class="negative">
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>부정의 강조</td>
+                        <td>negative</td>
+                        <td>#ffefe1</td>
+                    </tr>
+                    <tr class="positive">
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>긍정의 강조</td>
+                        <td>positive</td>
+                        <td>#ffffe1</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[eTr] 마우스 hover시 배경색상 변경</h2>
+                    <ul>
+                        <li>행을 선택하는 테이블 에서만 마우스 hover기능 적용</li>
+                        <li>전체선택하는 checkbox를 checked 하면 tr 배경색이 변경 됨</li>
+                        <li>thead의 th에 셀렉트 박스 대신 텍스트가 삽입될 경우 th="chk"대신 th="chkTxt" 삽입</li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>상품 가격정보 일괄수정 목록</caption>
+                    <colgroup><col class="chk" /><col width="auto;" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="selected">
+                        <td class="chk"><input type="checkbox" class="rowCk" checked="checked" /></td>
+                        <td class="center">내용</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="center">내용</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br />
+
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>상품 가격정보 일괄수정 목록</caption>
+                    <colgroup><col class="chk" /><col width="auto;" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chkTxt">선택</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td class="center">내용</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[eTrHover] tr 마우스 hover시 배경색상 및 커서 변경</h2>
+                    <ul>
+                        <li>행을 선택 시 컨텐츠에 선택한 내용이 삽입되는 프로세스일 때 사용</li>
+                        <li>사용 예 : <a href="http://fetest.cafe24test.com/smartAdmin/promotion/outsourcing/buyService/buy_shop.html" target="_blank">사입대행 &gt; 자주 이용하는 매장</a></li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTrHover">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col style="width:auto;" /><col style="width:10%;" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">제목</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>내용</td>
+                        <td>내용</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[noData] 데이터 없을 경우</h2>
+                    <p>게시판 리스트일 경우 '테이터 없음'셀 하단에 추가</p>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>추가 도메인</caption>
+                    <colgroup>
+                        <col width="5%" />
+                        <col width="15%" />
+                        <col width="auto" />
+                        <col width="15%" />
+                        <col width="18%" />
+                        <col width="18%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">분류</th>
+                        <th scope="col">추가 도메인</th>
+                        <th scope="col">도메인 정보조회</th>
+                        <th scope="col">도메인 만료일</th>
+                        <th scope="col">관리</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="6" class="noData">검색 내역이 없습니다.</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="layout" />
+</div>
+
+<div id="footer"><p class="copyright"><img src="http://img.echosting.cafe24.com/layout/txt_copyright.png" alt="Copyright&copy; SimpleX Internet Inc.All Rights Reserved." /></p></div>
+</body>
+</html>

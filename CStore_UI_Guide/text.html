@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="copyright" content="Copyright(c) Simplex Internet Inc.All Rights Reserved." />
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/module.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/contReset.css" media="screen" /><!-- 가이드용 CSS -->
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/ui.js"></script>
+</head>
+<body>
+<div id="skipNavigation">
+    <p><a href="#gnb">대메뉴 바로가기</a><a href="#content">컨텐츠 바로가기</a></p>
+</div>
+<hr class="layout" />
+
+<div id="wrap">
+    <div id="header"></div>
+    <hr class="layout" />
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <hr class="layout" />
+
+        <div id="content" style="width:985px;">
+
+            <div class="gHeading">
+                <div class="mTitle">
+                    <h1>컨텐츠 관련</h1>
+                </div>
+                <div class="mPath">
+                    <h2>현재 위치</h2>
+                    <ol>
+                        <li class="home"><a href="/">홈</a></li>
+                        <li>1depth</li>
+                        <li title="현재 위치"><strong>2depth</strong></li>
+                    </ol>
+                    <p><a href="#none" class="btnManual"><span>매뉴얼</span></a></p>
+                </div>
+            </div>
+
+            <div class="mGuideBox">
+                <h2>컨텐츠의 구성</h2>
+                <ul>
+                    <li>컨텐츠의 강조를 위해 아래와 같은 class를 사용합니다.</li>
+                    <li>어떤 태그에 사용해도 무관하나, 한글의 경우 italic은 가독성을 떨어트리므로 strong 이나 span을 사용해 강조할 것을 권장합니다.</li>
+                    <li>데이타 처리를 편리하게 하기 위해 td에 직접 class처리하지 않고, 반드시 인라인 엘리먼트로 감싸줍니다</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>폰트표기 가이드</h2>
+                </div>
+
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <colgroup><col width="15%" /><col width="25%" /><col width="auto" /></colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">class</th>
+                        <th scope="col">color, font</th>
+                        <th scope="col">설명</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">txtEm, txtMore, txtEng 사용 예</th>
+                        <td>
+                            <span class="txtEm txtMore"><strong class="txtEng">86,000</strong> 원</span>
+                        </td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>#1c1c1c</td>
+                        <td>일반적인 텍스트</td>
+                    </tr>
+                    <tr>
+                        <td>txtEm</td>
+                        <td>#1b87d4</td>
+                        <td>
+                            <span class="txtEm">[span] 긍정적인내용, 강조사항, 링크 등</span><br />
+                            <em class="txtEm">[em] 긍정적인내용, 강조사항, 링크 등</em><br />
+                            <strong class="txtEm">[strong] 긍정적인내용, 강조사항, 링크 등</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>txtWarn</td>
+                        <td>#ff6d01</td>
+                        <td>
+                            <span class="txtWarn">[span] 주의, 경고, 유의사항 등</span><br />
+                            <em class="txtWarn">[em] 주의, 경고, 유의사항 등</em><br />
+                            <strong class="txtWarn">[strong] 주의, 경고, 유의사항 등</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>txtEng</td>
+                        <td>font-family:Verdana</td>
+                        <td>
+                            <span class="txtEng">[span] English, Number (ex : 86,000)</span><br />
+                            <strong class="txtEng">[strong] English, Number (ex : 86,000)</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>txtMore</td>
+                        <td>font-size:14px</td>
+                        <td>
+                            <span class="txtMore">[span] 강조사항</span><br />
+                            <strong class="txtMore">[strong] 강조사항</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>txtInfo + txtMore</td>
+                        <td>font-size:12px</td>
+                        <td>
+                            <span class="txtInfo txtMore">[span] txtInfo에서 강조가 필요할 때</span><br />
+                            <p class="txtInfo txtMore">[p] txtInfo에서 강조가 필요할 때</p>
+                            <ul class="txtInfo txtMore">
+                                <li>[ul] txtInfo에서 강조가 필요할 때</li>
+                                <li>[ul] txtInfo에서 강조가 필요할 때</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>txtLess</td>
+                        <td>font-size:11px; #898989</td>
+                        <td>
+                            <span class="txtLess">[span] 상대적으로 덜 강조되는 부가설명</span><br />
+                            <strong class="txtLess">[strong] 상대적으로 덜 강조되는 부가설명</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>icoEm</td>
+                        <td>font-size:12px; font-weight:normal; </td>
+                        <td>
+                            <span class="txtLess"><span class="icoEm">※</span> 폰트 사이즈가 크거나, bold체 일때 시스템 특수문자를 사용할 경우</span><br />
+                            <strong class="txtLess"><span class="icoEm">※</span> 폰트 사이즈가 크거나, bold체 일때 시스템 특수문자를 사용할 경우</strong>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[txtInfo] 테이블 내 보조설명</h2>
+                    <ul>
+                        <li>2013년 1월부터 기존 txtInfo가 txtInfo로 대체</li>
+                        <li>보조설명의 정렬기준은 오브젝트 시작부분과 동일하게 맞춤</li>
+                        <li>3줄 이상 보조설명의 경우 레이어를 띄워 도움말 삽입</li>
+                    </ul>
+                </div>
+
+                <h3>우측 보조설명은 '-' 하이픈 없음</h3>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>보조설명</caption>
+                    <colgroup><col width="16%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>
+                            <input type="text" class="fText" style="width:330px;" />
+                            <span class="txtInfo">[0 / 50 Byte] 한글 25자 또는 영문 50자 이내 입력</span>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+
+                <br />
+
+                <h3>하단 보조설명은 '-' 하이픈 삽입</h3>
+                <div class="mBoard type2">
+                    <table border="1" summary="">
+                    <caption>보조설명</caption>
+                    <colgroup><col width="16%" /><col width="auto" /></colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>
+                            <textarea class="fTextarea" cols="20" rows="3"></textarea>
+                            <p class="txtInfo">[0 / 200 Byte] 한글 100자 또는 영문 200자 이내 입력</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>
+                            <textarea class="fTextarea" cols="20" rows="3"></textarea>
+                            <ul class="txtInfo">
+                                <li>[0 / 200 Byte] 한글 100자 또는 영문 200자 이내 입력</li>
+                                <li>[0 / 200 Byte] 한글 100자 또는 영문 200자 이내 입력</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>이미지</h2>
+                    <ul>
+                        <li>미리보기 이미지는 .frame으로 감싼다</li>
+                        <li>보더,여백이 불필요한 미리보기 이미지일 경우 .frame2 사용</li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type2 gMedium">
+                    <table border="1" summary="">
+                    <caption>테이블 제목</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">미리보기 이미지1</th>
+                        <td>
+                            <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@goods3.jpg" width="194" height="194" alt="" /></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">미리보기 이미지2</th>
+                        <td>
+                            <span class="frame2"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@goods3.jpg" width="194" height="194" alt="" /></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>아이콘</h2>
+                    <ul>
+                        <li>span 태그 사용 (단, btnEm의 아이콘은 em 태그사용)</li>
+                        <li>필요에 따라 img태그 사용가능</li>
+                        <li>아이콘형 버튼은 <a href="/guide/module/button.html" target="_blank"><strong>버튼가이드</strong></a> 에서 참고</li>
+                    </ul>
+                </div>
+
+                <div class="mBoard type1">
+                    <table border="1" summary="">
+                    <caption>제목</caption>
+                    <colgroup>
+                        <col style="width:20%;" />
+                        <col style="width:30%;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">이미지</th>
+                        <th scope="col">클래스명</th>
+                        <th scope="col">비고</th>
+                    </tr>
+                    </thead>
+                    <tbody class="center">
+                    <tr>
+                        <td><strong class="icoNotice">공지</strong></td>
+                        <td>icoNotice</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><strong class="icoDefault">기본</strong></td>
+                        <td>icoDefault</td>
+                        <td class="left">vertical-align:middle;</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="icoMajor">중요</strong></td>
+                        <td>icoMajor</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoNew">NEW</span></td>
+                        <td>icoNew</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoFile">첨부파일</span></td>
+                        <td>icoFile</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoPrint">인쇄</span></td>
+                        <td>icoPrint</td>
+                        <td class="left">단순 아이콘</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#none" class="btnIcon icoPrint">인쇄</a></td>
+                        <td>icoPrint</td>
+                        <td class="left">아이콘형 버튼 일 경우 : a태그 사용 (btnIcon + icoPrint)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoUp">상승</span></td>
+                        <td>icoUp</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoDown">하락</span></td>
+                        <td>icoDown</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoOff">OFF</span></td>
+                        <td>icoOff</td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="icoOn">ON</span></td>
+                        <td>icoOn</td>
+                        <td class="left"></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="layout" />
+</div>
+
+<div id="footer"><p class="copyright"><img src="http://img.echosting.cafe24.com/layout/txt_copyright.png" alt="Copyright&copy; SimpleX Internet Inc.All Rights Reserved." /></p></div>
+</body>
+</html>

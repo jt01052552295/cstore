@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="copyright" content="Copyright(c) Simplex Internet Inc.All Rights Reserved." />
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/module.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/contReset.css" media="screen" /><!-- 가이드용 CSS -->
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/ui.js"></script>
+</head>
+<body>
+<div id="skipNavigation">
+    <p><a href="#gnb">대메뉴 바로가기</a><a href="#content">컨텐츠 바로가기</a></p>
+</div>
+<hr class="layout" />
+
+<div id="wrap">
+    <div id="header"></div>
+    <hr class="layout" />
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <hr class="layout" />
+
+        <div id="content" style="width:985px;">
+
+            <div class="gHeading">
+                <div class="mTitle">
+                    <h1>표, 게시판</h1>
+                </div>
+                <div class="mPath">
+                    <h2>현재 위치</h2>
+                    <ol>
+                        <li class="home"><a href="/">홈</a></li>
+                        <li>1depth</li>
+                        <li title="현재 위치"><strong>2depth</strong></li>
+                    </ol>
+                    <p><a href="#none" class="btnManual"><span>매뉴얼</span></a></p>
+                </div>
+            </div>
+
+            <div class="mGuideBox">
+                <h2>주의사항</h2>
+                <ul>
+                    <li>col width 대신 col style="width" 권장. HTML5 validation에서 오류로 체크됨</li>
+                    <li>mBoard 의 <strong>th width는 16%~20%</strong>로 컨텐츠 분량에 따라, 자유롭게 사용하며 분량이 많아질 경우엔 적당한 단어에서 br을 삽입해서 정렬을 맞춘다.</li>
+                    <li>체크박스만 셀에 삽입될경우 .chk로 width값 제어</li>
+                    <li>셀병합될경우 tr에 .rowMerge 추가하여 보더제어(기본은 tr 첫번째 td에 왼쪽 보더없음)</li>
+                    <li><strong>.eTr : tr 오버시 배경색 변경에 사용 (행을 선택할 경우만)</strong></li>
+                    <li>게시판 리스트일 경우 '테이터 없음'셀 하단에 추가</li>
+                    <li>폼요소의 부가 설명은 .txtInfo 사용</li>
+                    <li>td 폭을 좁게 사용해야 하는 경우 tbody에 .gCellSingle 추가 : 좌우 패딩 5px로 변경</li>
+                    <li>셀 내에서 버튼 정렬은 <a href="button.html" target="_blank">[button]</a> 페이지를 참고한다</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>테이블과 함께 쓰이는 보조 모듈</h2>
+                </div>
+
+                <h3>[mRequired] 필수 입력사항</h3>
+                <p class="mRequired"><strong class="txtMust">*</strong> 필수 입력사항</p>
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="">
+                    <caption>메타 태그 설정</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">필수 입력사항 <strong class="txtWarn">*</strong></th>
+                        <td>필수 입력사항이후 1space + strong으로 마크업</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[mSearch] 검색입력</h3>
+                <div class="mSearch">
+                    <span class="bullet">그룹명</span>
+                    <select>
+                        <option>분류선택</option>
+                    </select>
+                    <input type="text" class="fText" style="width:200px;" />
+                    <a href="#none" class="btnEm"><span>검색</span></a>
+                </div>
+
+                <div class="mSearch">
+                    <select>
+                        <option>모든 옵션정보</option>
+                        <option>옵션코드, 가격, 재고 만</option>
+                    </select>
+                    <a href="#none" class="btnEm"><span>초기화</span></a>
+                </div>
+
+                <h3>[mResult] 검색결과</h3>
+                <div class="mResult">
+                    <p class="gTotal">검색결과 <em>4</em>개</p>
+                    <div class="gSort">
+                        <p class="bgColor">
+                            <span class="bgFinish"><span></span>입고전송완료</span>
+                            <span class="bgNosend"><span></span>미전송</span>
+                            <span class="bgDelete"><span></span>옵션삭제/추가상품</span>
+                            <span class="bgChange"><span></span>옵션변경상품</span>
+                        </p>
+                        <select>
+                            <option value="재고상태순">재고상태순</option>
+                            <option value="상품명순" selected="selected">상품명순</option>
+                            <option value="요청일순">요청일순</option>
+                        </select>
+                        <select>
+                            <option>10개씩 보기</option>
+                            <option selected="selected">30개씩 보기</option>
+                            <option>50개씩 보기</option>
+                            <option>100개씩 보기</option>
+                            <option>300개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mResult">
+                    <p class="gTotal">[총 등록상품 <em>40</em>개] 검색결과 <em>4</em>개</p>
+                    <div class="gSort">
+                        <!--p class="gOrder">
+                            <span>상품평<button class="ascend">오름차순</button><button class="descend">내림차순</button></span>
+                            <span>등록일<button class="ascend">오름차순</button><button class="descend">내림차순</button></span>
+                            <span>판매가<button class="ascend">오름차순</button><button class="descend">내림차순</button></span>
+                            <span>제조사<button class="ascend">오름차순</button><button class="descend">내림차순</button></span>
+                        </p-->
+                        <select>
+                            <option>10개씩 보기</option>
+                            <option selected="selected">30개씩 보기</option>
+                            <option>50개씩 보기</option>
+                            <option>100개씩 보기</option>
+                            <option>300개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mResult">
+                    <p class="gTotal">[총 등록상품 <em>40</em>개] 검색결과 <em>4</em>개</p>
+                    <div class="gSort">
+                        <a href="#none" class="btnEm"><span>추가</span></a>
+                    </div>
+                </div>
+
+                <div class="mTitle gSub">
+                    <h3>[mCtrl + typeBoard] 리스트 컨트롤 : 테이블 상,하단에 위치</h3>
+                    <p>버튼 클릭시 레이어팝업이 뜰 경우 p대신 div로 영역을 감싼다. ex) div class="gCtrlLeft"</p>
+                </div>
+                <div class="mCtrl typeBoard">
+                    <p class="gCtrlLeft">
+                        <strong class="ctrlTxt">선택한 항목을</strong>
+                        <a href="#none" class="btnCtrl"><span><em class="icoDel"></em> 삭제</span></a>
+                        <a href="#none" class="btnCtrl"><span>배송시작 처리</span></a>
+                    </p>
+                    <p class="gCtrlRight">
+                        <a href="#none" class="btnCtrlEm"><span>배송업체 등록</span></a>
+                    </p>
+                </div>
+
+                <h3>[mCtrl + typeDisplay] 상품진열관리</h3>
+                <div class="mCtrl typeDisplay">
+                    <p class="gCtrlLeft">
+                        <button class="btnMove icoFirst"><span>선택한 항목 최상단으로 이동</span></button>
+                        <button class="btnMove icoPrev"><span>선택한 항목 한줄 위로 이동</span></button>
+                        <button class="btnMove icoNext"><span>선택한 항목 한줄 아래로 이동</span></button>
+                        <button class="btnMove icoLast"><span>선택한 항목 최하단으로 이동</span></button>
+                    </p>
+                    <p class="gCtrlRight">
+                        <a href="#none" class="btnEm"><span>진열상태 변경</span></a>
+                        <a href="#none" class="btnEm"><span><em class="icoDel"></em> 삭제</span></a>
+                    </p>
+                </div>
+
+                <h3>[mCtrl + typeAdd] 게시판 추가,삭제</h3>
+                <div class="mCtrl typeAdd">
+                    <p>
+                        <a href="#none" class="btnEm"><span><em class="icoMore"></em> 추가</span></a>
+                        <a href="#none" class="btnEm"><span><em class="icoDel"></em> 삭제</span></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[goods] 상품목록</h2>
+                </div>
+
+                <h3>[mBoard &gt; goods + type1] 썸네일 38 x 38 : 체크박스 없음</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col style="width:auto;" />
+                        <col style="width:10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">상품명</th>
+                        <th scope="col">진열상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>
+                            <div class="goods type1">
+                                <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@img_38x38.jpg" width="38" height="38" alt="" /></span>
+                                <p><a href="#none">Nikon D700 번들렌즈 50mm~150mm Nikon D700 번들렌즈 50mm~150mm Nikon D700 번들렌즈 50mm~150mm</a></p>
+                                <ul>
+                                    <li>- Size : Free</li>
+                                    <li>- Color : Red</li>
+                                </ul>
+                                <span class="preview"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></span>
+                            </div>
+                        </td>
+                        <td class="center">진열</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[mBoard &gt; goods + type1 + typeChk] 썸네일 38 x 38 : 체크박스 있음</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col style="width:auto;" />
+                        <col style="width:10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">상품명</th>
+                        <th scope="col">진열상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>
+                            <div class="goods type1 typeChk">
+                                <input type="checkbox" />
+                                <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@img_38x38.jpg" width="38" height="38" alt="" /></span>
+                                <p><a href="#none">Nikon D700 번들렌즈 50mm~150mm Nikon D700 번들렌즈 50mm~150mm Nikon D700 번들렌즈 50mm~150mm</a></p>
+                                <ul>
+                                    <li>- Size : Free</li>
+                                    <li>- Color : Red</li>
+                                </ul>
+                                <span class="preview"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></span>
+                            </div>
+                        </td>
+                        <td class="center">진열</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>
+                            <div class="goods type1 typeChk">
+                                <input type="checkbox" />
+                                <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@img_38x38.jpg" width="38" height="38" alt="" /></span>
+                                <p><a href="#none">Nikon D700 번들렌즈 50mm~150mm Nikon D700 번들렌즈 50mm~150mm Nikon D700 번들렌즈 50mm~150mm</a></p>
+                                <ul>
+                                    <li>- Size : Free</li>
+                                    <li>- Color : Red</li>
+                                </ul>
+                                <span class="preview"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></span>
+                            </div>
+                        </td>
+                        <td class="center">진열</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <br /><br /><br />
+
+                <h3>[mBoard &gt; goods + type2] 썸네일 50 x 50 : 체크박스 없음</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col style="width:auto;" />
+                        <col style="width:10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">상품명</th>
+                        <th scope="col">진열상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>
+                            <div class="goods type2">
+                                <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@goods.jpg" alt="" /></span>
+                                <p><a href="#none">Nikon D700 번들렌즈 50mm~150mm</a></p>
+                                <ul>
+                                    <li>- Size : Free</li>
+                                    <li>- Color : Red</li>
+                                </ul>
+                                <span class="preview"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></span>
+                            </div>
+                        </td>
+                        <td class="center">진열</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3>[mBoard &gt; goods + type2 + typeChk] 썸네일 50 x 50 : 체크박스 있음</h3>
+                <div class="mBoard type1">
+                    <table border="1" summary="" class="eTr">
+                    <caption>목록</caption>
+                    <colgroup>
+                        <col class="chk" />
+                        <col style="width:auto;" />
+                        <col style="width:10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="chk"><input type="checkbox" class="allCk" /></th>
+                        <th scope="col">상품명</th>
+                        <th scope="col">진열상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>
+                            <div class="goods type2 typeChk">
+                                <input type="checkbox" />
+                                <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@goods.jpg" alt="" /></span>
+                                <p><a href="#none">Nikon D700 번들렌즈 50mm~150mm</a></p>
+                                <ul>
+                                    <li>- Size : Free</li>
+                                    <li>- Color : Red</li>
+                                </ul>
+                                <span class="preview"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></span>
+                            </div>
+                        </td>
+                        <td class="center">진열</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox" class="rowCk" /></td>
+                        <td>
+                            <div class="goods type2 typeChk">
+                                <input type="checkbox" />
+                                <span class="frame"><img src="http://img.echosting.cafe24.com/smartAdmin/img/common/@goods.jpg" alt="" /></span>
+                                <p><a href="#none">Nikon D700 번들렌즈 50mm~150mm</a></p>
+                                <ul>
+                                    <li>- Size : Free</li>
+                                    <li>- Color : Red</li>
+                                </ul>
+                                <span class="preview"><a href="#none" class="icoPreview" title="미리보기">미리보기</a></span>
+                            </div>
+                        </td>
+                        <td class="center">진열</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mAttachment] 다운로드 파일 리스트</h2>
+                </div>
+
+                <div class="mBoard type2 gTripleTop">
+                    <table border="1" summary="">
+                    <caption>다운로드 파일 목록</caption>
+                    <colgroup>
+                        <col style="width:16%">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">파일이 하나일 경우</th>
+                        <td>
+                            <div class="mAttachment">
+                                <p><span class="fChk"><a href="#none">3월3주.html</a></span><span class="capacity">32.49 K</span><a href="#none" class="icoDelete"><span>삭제</span></a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">파일이 여러개일 경우</th>
+                        <td>
+                            <div class="mAttachment">
+                                <ul>
+                                    <li><label class="fChk"><input type="checkbox" /> 3월3주.html</label><span class="capacity">32.49 K</span><a href="#none" class="icoDelete"><span>삭제</span></a></li>
+                                    <li><label class="fChk"><input type="checkbox" /> 여성&amp;잡화.html</label><span class="capacity">35.19 K</span><a href="#none" class="btnIcon icoDel"><span>삭제</span></a></li>
+                                    <li><label class="fChk"><input type="checkbox" /> 남성&amp;멀티.html</label><span class="capacity">25.69 K</span><a href="#none" class="btnIcon icoDel"><span>삭제</span></a></li>
+                                    <li><label class="fChk"><input type="checkbox" /> 뷰티&amp;언더웨어.html</label><span class="capacity">24.51 K</span><a href="#none" class="btnIcon icoDel"><span>삭제</span></a></li>
+                                    <li><label class="fChk"><input type="checkbox" /> 생활&amp;유아.html</label><span class="capacity">48.11 K</span><a href="#none" class="btnIcon icoDel"><span>삭제</span></a></li>
+                                </ul>
+                                <p>
+                                    <a href="#none" class="btnEm"><span>선택 다운로드</span></a>
+                                    <a href="#none" class="btnEm "><span>전체 다운로드</span></a>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mBoard + type2] 이전글 / 다음글</h2>
+                </div>
+
+                <div class="mBoard type2 gSmall">
+                    <table border="1" summary="">
+                    <caption>공지사항 목록</caption>
+                    <tbody>
+                    <tr>
+                        <th scope="row">이전글</th>
+                        <td><a href="#none">이전글입니다.</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">다음글</th>
+                        <td><a href="#none">다음글입니다.</a></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="layout" />
+</div>
+
+<div id="footer"><p class="copyright"><img src="http://img.echosting.cafe24.com/layout/txt_copyright.png" alt="Copyright&copy; SimpleX Internet Inc.All Rights Reserved." /></p></div>
+</body>
+</html>

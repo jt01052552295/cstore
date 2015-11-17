@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="copyright" content="Copyright(c) Simplex Internet Inc.All Rights Reserved." />
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/module.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://img.echosting.cafe24.com/css/layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/contReset.css" media="screen" /><!-- 가이드용 CSS -->
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://img.echosting.cafe24.com/js/ui.js"></script>
+</head>
+<body>
+<div id="skipNavigation">
+    <p><a href="#gnb">대메뉴 바로가기</a><a href="#content">컨텐츠 바로가기</a></p>
+</div>
+<hr class="layout" />
+
+<div id="wrap">
+    <div id="header"></div>
+    <hr class="layout" />
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <hr class="layout" />
+
+        <div id="content" style="width:985px;">
+
+            <div class="gHeading">
+                <div class="mTitle">
+                    <h1>Tab</h1>
+                </div>
+                <div class="mPath">
+                    <h2>현재 위치</h2>
+                    <ol>
+                        <li class="home"><a href="/">홈</a></li>
+                        <li>1depth</li>
+                        <li title="현재 위치"><strong>2depth</strong></li>
+                    </ol>
+                    <p><a href="#none" class="btnManual"><span>매뉴얼</span></a></p>
+                </div>
+            </div>
+
+            <div class="mGuideBox">
+                <h2>주의사항</h2>
+                <ul>
+                    <li>탭이 필요한 형태가 동일 depth인지 하위 depth 인지 확인하여 적용합니다.</li>
+                    <li>기본 탭에 하위 메뉴가 추가 될 경우, .gExtend를 추가하여 확장하며, 이를 확장버전이라고 부릅니다.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="mTitle">
+                    <h2>[mTab] 탭</h2>
+                </div>
+
+                <h3>[typeNav] 동일 depth 이동 네비게이션 탭</h3>
+                <ul class="mList">
+                    <li>페이지 타이틀(.gHeading) 바로 하단에 들어가는 분류탭. </li>
+                    <li><a href="/smartAdmin/product/registration/basic.html" target="_blank">/smartAdmin/product/registration/basic.html</a></li>
+                </ul>
+
+                <h4>일반 버전</h4>
+                <div class="mTab typeNav">
+                    <ul>
+                        <li><a href="#none">상품정보</a></li>
+                        <li class="selected"><a href="#none">상품옵션</a></li>
+                        <li><a href="#none">관련상품</a></li>
+                        <li><a href="#none">가격할인</a></li>
+                    </ul>
+                </div>
+
+                <h4>[gSmall] 일반 버전 : 간격조정</h4>
+                <div class="mTab typeNav gSmall">
+                    <ul>
+                        <li><a href="#none">상품정보</a></li>
+                        <li class="selected"><a href="#none">상품옵션</a></li>
+                        <li><a href="#none">관련상품</a></li>
+                        <li><a href="#none">가격할인</a></li>
+                    </ul>
+                </div>
+
+                <h4>[gExtend] 확장 버전</h4>
+                <div class="mTab typeNav gExtend">
+                    <ul>
+                        <li><a href="#none">상품정보</a></li>
+                        <li class="selected"><a href="#none">상품옵션</a>
+                            <div class="sub">
+                                <ul>
+                                    <li class="first selected"><a href="#none">일반 상품등록</a></li>
+                                    <li><a href="#none">추천 상품등록</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#none">관련상품</a></li>
+                        <li><a href="#none">가격할인</a></li>
+                    </ul>
+                </div>
+                <br />
+
+                <h3>[typeTab] 하위 depth 이동 네비게이션 탭</h3>
+
+                <h4>일반 버전</h4>
+                <div class="mTab typeTab">
+                    <ul>
+                        <li class="selected"><a href="#none"><span>활성화 목록</span></a></li>
+                        <li><a href="#none"><span>비활성화 목록</span></a></li>
+                        <li><a href="#none"><span>비활성화 목록</span></a></li>
+                    </ul>
+                </div>
+
+                <h4>[gExtend] 확장 버전</h4>
+                <div class="mTab typeTab gExtend">
+                    <ul>
+                        <li class="selected"><a href="#none"><span>활성화 목록</span></a>
+                            <div class="sub">
+                                <ul>
+                                    <li class="first selected"><a href="#none">일반 상품등록</a></li>
+                                    <li><a href="#none">추천 상품등록</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#none"><span>비활성화 목록</span></a>
+                            <div class="sub">
+                                <ul>
+                                    <li class="first selected"><a href="#none">일반 상품등록</a></li>
+                                    <li><a href="#none">추천 상품등록</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#none"><span>비활성화 목록</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <hr class="layout" />
+</div>
+
+<div id="footer"><p class="copyright"><img src="http://img.echosting.cafe24.com/layout/txt_copyright.png" alt="Copyright&copy; SimpleX Internet Inc.All Rights Reserved." /></p></div>
+</body>
+</html>

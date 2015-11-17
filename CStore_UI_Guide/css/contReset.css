@@ -1,0 +1,16 @@
+/* 가이드 페이지의 컨텐츠 리셋을 위한 css로 실제 컨텐츠에 영향을 주지 않습니다. */
+
+/* Layout */
+div.section { margin:0 0 100px; }
+
+/* Heading */
+#popup .gHeading { padding:22px 0 7px; }
+
+/* 가이드용 모듈 디자인 */
+
+.mGuideBox { margin:20px 0; padding:5px 15px 15px; background:#fffbe2; border:1px solid #ecdc76; border-radius:3px; line-height:1.4em; }
+.mGuideBox h2 { padding:10px 0; color:#ed973b; font-size:14px; }
+.mGuideBox li { padding:0 0 0 10px; background:url("http://img.echosting.cafe24.com/smartAdmin/img/common/bg_ico.png") -680px -407px no-repeat; }
+.mGuideBox a { padding:0 18px 0 0; margin:0 5px 0 0; background:url("/season2/img/ico_newWindow.png") no-repeat scroll 100% 50% transparent; color:#fe8436; font-weight:bold; }
+/* table > 주요 항목 셀 너비 지정의 class 노출용 */
+.className { display:block; font-weight:normal; }
