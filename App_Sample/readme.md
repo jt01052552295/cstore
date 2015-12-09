@@ -1,12 +1,12 @@
 # Cafe24 SDK CStore App Sample
+ CStore SDK를 이용한 APP 개발 샘플
+ 특정 기능 구현에 목적이 있으며 사소한 버그 존재
 
 ## Features 
  - CAPI를 이용한 쇼핑몰의 카테고리 정보, 상품 정보 호출
  - Redis를 이용한 설정 정보 저장
  - Storage Server에 이미지 등록
 
-## Directory 
-  
 ## DEMO
   - 개발 Admin : http://githubsample.app-sdk-001.cafe24.com/admin/index
   - 개발 Front : http://githubsample.app-sdk-001.cafe24.com/demo.html
