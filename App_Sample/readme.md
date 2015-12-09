@@ -1,5 +1,5 @@
 # Cafe24 SDK CStore App Sample
-> CStore SDK를 이용한 APP 개발 샘플
+> CStore SDK를 이용한 APP 개발 샘플<br/>
 > 특정 기능 구현에 목적이 있으며 사소한 버그 존재
  
  
