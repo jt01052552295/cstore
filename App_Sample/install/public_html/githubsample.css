@@ -1,0 +1,8 @@
+.xans-githubsample-display a { text-decoration:none;}
+.xans-githubsample-display > img { max-height:250px;padding-bottom:10px; }
+.xans-githubsample-display ul { margin:0px;padding:0px}
+.xans-githubsample-display li { float:left; }
+.xans-githubsample-display li span.img { display:block;text-align:center;border:1px solid #ddd;padding:5px;margin-right:10px;margin-bottom:10px;}
+.xans-githubsample-display li span.img > img { max-width:150px}
+.xans-githubsample-display li strong { display:block;font-size:11px;color:black; }
+.xans-githubsample-display li span.price { text-align:center;font-size:12px;color:#1123fe;font-weight:bold;}

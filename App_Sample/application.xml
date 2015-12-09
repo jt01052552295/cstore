@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application>
+    <langs support="ko" default="ko"></langs>
+    <api use="off">
+        <ifs>
+        </ifs>
+    </api>
+    <admin use="on" index="adminIndex">
+        <ifs>
+            <if name="Sample Index" class="adminIndex" permission="off" desc="Sample Admin Interface"></if>
+        </ifs>
+        <menus>
+        </menus>
+    </admin>
+    <front use="on">
+        <ifs>
+            <if name="Sample Front" class="frontDisplay" permission="off" code-assist="on" desc="샘플 상품정보 및 이미지를 출력합니다.">
+            </if>
+        </ifs>
+        <review index="/[APPS]/demo.html"></review>
+    </front>
+</application> 
+
+

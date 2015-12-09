@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codehint>
+    <var value="image_url" name="기본 이미지 경로"></var>
+    <var value="prd_name" name="상품명"></var>
+    <var value="price" name="상품가격"></var>
+    <var value="prd_img" name="상품이미지"></var>
+    <var value="prd_detail_link" name="상품경로"></var>
+</codehint>
