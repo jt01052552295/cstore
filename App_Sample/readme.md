@@ -10,8 +10,8 @@
  - Storage Server에 이미지 등록
 
 ## DEMO
-  - 개발 Admin : http://githubsample.app-sdk-001.cafe24.com/admin/index
-  - 개발 Front : http://githubsample.app-sdk-001.cafe24.com/demo.html
+  - 개발 Admin : http://githubsample.app-sdk-003.cafe24.com/admin/index
+  - 개발 Front : http://githubsample.app-sdk-003.cafe24.com/demo.html
   - 몰 적용 : http://devsdk0001.cafe24.com/
 
 ## ScreenShots
