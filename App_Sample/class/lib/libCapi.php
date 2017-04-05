@@ -44,7 +44,7 @@ class libCapi
      */
     public function categoryList()
     {
-        // Cafe24 OpenAPI(CAPI)로 카테고리 정보 가져오기
+        // cafe24 OpenAPI(CAPI)로 카테고리 정보 가져오기
         $aCategory = $this->oApi->call('category', 'detail', array('is_display', 'T'));
         $aCategoryList = self::setResultAasign($aCategory);
 

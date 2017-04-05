@@ -18,7 +18,7 @@ class adminIndex extends adminDisp
         // 카테고리 캐시 정보가 없으면 정보 가져오기
         if ( $this->Redis->ttl( libConfig::APP_CATEGORY_CACHE ) < 0 || isset($this->args['c']) ) {
 
-            // Cafe24 OpenAPI(CAPI)로 카테고리 정보 가져오기
+            // cafe24 OpenAPI(CAPI)로 카테고리 정보 가져오기
             $aCategoryList = libCapi::instance($this->Openapi)->categoryList();
 
             if ( count( $aCategoryList['data']) > 0 ) {
